@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player glass">
+        <div class="player-controls">
+          <button onclick="previousAudio()">Previous</button>
+          <!-- <button onclick="playAudio()">Play</button> -->
+          <audio controls></audio>
+          <!-- <button onclick="pauseAudio()">Pause</button> -->
+          <button class="btnStop" onclick="stopAudio()">Stop</button>
+          <button onclick="nextAudio()">Next</button>
+        </div>
+      </div>
+      <div class="list glass">
+        <h3>Playlist</h3>
+        <div id="playlist"></div>
+      </div>
+      <div class="glass currentTrack">
+        <h3>Music Player</h3>
+        <h4 id="trackName"></h4>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>
